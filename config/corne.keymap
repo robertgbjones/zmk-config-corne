@@ -9,6 +9,17 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_unlock {
+            timeout-ms = <100>;
+            key-positions = <0 1 2>;
+            bindings = <&studio_unlock>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
